@@ -4,6 +4,7 @@ var app = {
         this.bindEvents();
     },
     this.$el.on('click', '.change-pic-btn', this.changePicture);
+    this.$el.on('click', '.add-location-btn', this.addLocation);
     
 };
 
@@ -34,3 +35,17 @@ this.changePicture = function(event) {
 
   return false;
 };
+
+this.addLocation = function(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(
+      function(position) {
+          alert(position.coords.latitude + ',' + position.coords.longitude);
+      },
+      function() {
+          alert('Error getting location');
+      });
+  return false;
+};
+
+
