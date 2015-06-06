@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="bg">
     <head>
-        
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+		<meta charset="UTF-8">
+       
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/nmp.js"></script>
+        
+        
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>sigy</title>
+        
+        
     </head>
     <body>
+		<div class="container">
+			<div class="header">
+				<h3 class="text-muted">sigy</h3>
+			</div>
+			
+			<div class="main">
+			<h3>Подай сигнал:</h3>
+			<form>
+				<div class="form-group">
+					<textarea class="form-control" rows="3" placeholder="Тук напишете описание на проблема"></textarea>
+				</div>
+			  <div class="form-group">
+				<label for="exampleInputFile">Прикачи снимка</label>
+				<input type="file" id="exampleInputFile">
+				<p class="help-block">Прикачете снимка с нередността.</p>
+			  </div>
+			  <button type="submit" class="btn btn-default">Изпрати</button>
+			</form>
+		
+		</div>
+		</div>
 		
 		
-		
-		
-        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>

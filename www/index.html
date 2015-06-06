@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="bg">
     <head>
-        
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+		<meta charset="UTF-8">
+       
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=20, minimum-scale=1, width=device-width">
-        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+       
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		<script src="js/bootstrap.js"></script>
@@ -29,19 +30,24 @@
     </head>
     <body>
 		<div class="container">
-			<img src="img/sigy.png" class="img-responsive" alt="Responsive image">
-			<form>
-				<div class="form-group">
-					<textarea class="form-control" rows="3" placeholder="Тук напишете описание на проблема"></textarea>
-				</div>
-			  <div class="form-group">
-				<label for="exampleInputFile">Прикачи снимка</label>
-				<input type="file" id="exampleInputFile">
-				<p class="help-block">Прикачете снимка с нередността.</p>
-			  </div>
-			  <button type="submit" class="btn btn-default">Изпрати</button>
-			</form>
+			<div class="header">
+				<h3 class="text-muted">sigy</h3>
+			</div>
+			
+			<div class="main">
+				<h3>Подай сигнал:</h3>
+				<form>
+					<div class="form-group">
+						<textarea class="form-control" rows="3" placeholder="Тук напишете описание на проблема"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputFile">Прикачи снимка</label>
+						<input type="file" id="exampleInputFile">
+						<p class="help-block">Прикачете снимка с нередността.</p>
+					</div>
+					<button type="submit" class="btn btn-default">Изпрати</button>
+				</form>
+			</div>
 		</div>
-		
     </body>
 </html>

@@ -9,7 +9,7 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
                             "count": 1
                         },
                         {
@@ -17,7 +17,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -27,15 +27,15 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
                             "count": 1
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
                             "count": 1
                         }
                     ]
@@ -44,19 +44,19 @@
         }
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.veselina.sigy"
-        },
-        "cordova-plugin-device": {
+        "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.veselina.sigy"
         },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.veselina.sigy"
         },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.veselina.sigy"
+        },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.veselina.sigy"
         },
-        "cordova-plugin-camera": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.veselina.sigy"
         }
     },
