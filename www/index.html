@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="bg">
     <head>
         
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=20, minimum-scale=1, width=device-width">
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/nmp.js"></script>
+        
+        
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>sigy</title>
+        
+        
     </head>
     <body>
-		
-		<li class="table-view-cell media">
-		  <a hre="#" class="push-right change-pic-btn">
-			  <span class="media-object pull-left"></span>
-			  <div class="media-body">
-				  Change Picture
-			  </div>
-		  </a>
-		</li>
-		
-		<li class="table-view-cell media">
-			<a hre="#" class="push-right add-location-btn">
-				<span class="media-object pull-left"></span>
-				<div class="media-body">
-					Add location
+		<div class="container">
+			<img src="img/sigy.png" class="img-responsive" alt="Responsive image">
+			<form>
+				<div class="form-group">
+					<textarea class="form-control" rows="3" placeholder="Тук напишете описание на проблема"></textarea>
 				</div>
-			</a>
-		</li>
+			  <div class="form-group">
+				<label for="exampleInputFile">Прикачи снимка</label>
+				<input type="file" id="exampleInputFile">
+				<p class="help-block">Прикачете снимка с нередността.</p>
+			  </div>
+			  <button type="submit" class="btn btn-default">Изпрати</button>
+			</form>
+		</div>
 		
-        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
